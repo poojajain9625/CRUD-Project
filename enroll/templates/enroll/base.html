@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CRUD PROJECT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    </head>
+    <style>
+        .errorlist{
+            list-style-type:none;
+            color:red;
+            font-size:fs-4;
+        }
+    </style>
+    <body>
+        <div class='container mt-5'>
+            <h2 class='text-center alert alert-danger'>Function Based View ModelForm CRUD Project</h2>
+            {% block content %} {% endblock content %}
+        </div>
+        
+        <script src="{% static 'enroll/js/jquery.js' %}"></script>
+        <script src="{% static 'enroll/js/popper.js' %}"></script>
+        <script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+    </body>
+</html>
